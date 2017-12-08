@@ -13,11 +13,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    if logged_in?
       session.delete :name
-    else
-      session[:name] = nil
-    end
   end
 
 end
