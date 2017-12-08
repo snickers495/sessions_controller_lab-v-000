@@ -16,7 +16,7 @@ class SessionsController < ApplicationController
     if logged_in?
       session.delete :name
       redirect_to "/new"
-    else 
+    else
       redirect_to "/"
     end
   end
